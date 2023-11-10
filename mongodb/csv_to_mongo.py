@@ -24,11 +24,11 @@ if __name__ == "__main__":
     port = config["port"]
 
     print("Lineas Importadas")
-    document_count = mongoimport("./e01_telefono.csv", database_name, "telefonos", host, port)
+    document_count = mongoimport("./e01_telefono.csv", database_name, "telefono", host, port)
     print(f'Telefonos: {document_count}')
-    document_count = mongoimport("./e01_cliente.csv", database_name, "clientes", host, port)
+    document_count = mongoimport("./e01_cliente.csv", database_name, "cliente", host, port)
     print(f'Clientes: {document_count}')
-    document_count = mongoimport("./e01_factura.csv", database_name, "facturas", host, port)
+    document_count = mongoimport("./e01_factura.csv", database_name, "factura", host, port)
     print(f'Facturas: {document_count}')
     document_count = mongoimport("./e01_detalle_factura.csv", database_name, "detalle_factura", host, port)
     print(f'Detalle Facturas: {document_count}')

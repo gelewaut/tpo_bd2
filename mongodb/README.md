@@ -8,7 +8,7 @@
 
 ### Instalación
 
-Parado en la carpeta del tp2 ejecutar
+Parado en la carpeta mongodb ejecutar
 
 ```sh
 pipenv install
