@@ -1,30 +1,25 @@
-# TPO_BD2
+# TPO BD2
 
+## SQL
 
-### Ejecutar la API
+3 archivos sql:
+- ITBA_2023_esquema_facturacion.sql: un script con el esquema y los datos
+- queries.sql: las 10 queries pedidas
+- vistas.sql: un script para crear las vistas pedidas
 
-#### Requerimientos:
-- Tener instalado node y postgres  
-- configurar los datos de la base de datos en el archivo db.js en la carpeta api
-los campos a configurar son:
-    - user: usuario de postgres
-    - password: contraseña de postgres
-    - database: nombre de la bd donde se encuentran las tablas (e01_cliente y e01_producto)
-    - host: localhost
-    - puerto: por default el de postgres es el 5432
+## API
 
+Una api para poder dar de alta, baja y modificacion a clientes y 
+dar de alta y modificacion productos  
+Para saber como ejecutar la api consultar el siguiente 
+[README.md](api/README.md)
 
-Ingresar a la carpeta api con el comando `cd ./api`  
-Ejecutar el comando `node index` y ya tendra corriendo la api en localhost:3000
+## MONGODB
 
-#### La Api Soporta:  
-Clientes:  
-- Post -> /clients con un cuerpo json con los atributos (nro_cliente, nombre, apellido, direccion,activo)
-- Put -> /clients/:nro_cliente con un cuerpo json con los atributos (nombre, apellido, direccion, activo)
-- Get -> /clients/:nro_cliente
-- Delete -> /clients/:nro_cliente  
+5 archivos csv correspondientes a los datos exportados del sql  
 
-Productos:
-- Post -> /products con un cuerpo json con los atributos (codigo_producto, marca, nombre, descripcion, precio, stock)
-- Put -> /products/:codigo_producto con un cuerpo json con los atributos (marca, nombre, descripcion, precio, stock)
-- Get -> /products/:codigo_producto
+Un script de python para poder migrar esos datos a la base de datos mongodb.
+Para informacion de como ejecutar el script consultar el 
+[README.md](mongodb/readme.md) 
+
+2 archivos txt con los comandos correspondientes a las queries y las vistas

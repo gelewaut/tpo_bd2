@@ -1,0 +1,5 @@
+{
+    "database_name": "tpo_bd2",
+    "host": "localhost",
+    "port": 27017
+}
