@@ -3,7 +3,7 @@
 ### Requisitos:
 
 - Node
-- Postgres
+- MongoDB
 
 ## Ejecución
 
@@ -12,15 +12,12 @@ npm install
 node index
 ```
 
-## Archivos de configuracion (db.js)
-configurar los datos de la base de datos en el archivo db.js en la carpeta api
-los campos a configurar son:
-- user: usuario de postgres
-- password: contraseña de postgres
-- database: nombre de la bd donde se encuentran las tablas (e01_cliente y e01_producto)
-- host: localhost
-- db_port: por default el de postgres es el 5432
+## Archivos de configuracion (config.json)
+configurar los datos de la base de datos en el json de config.json los campos a configurar son:
 - api_port: puerto por el cual escucha la api
+- database: nombre de la bd donde se encuentran las colecciones
+- host: localhost
+- db_port: por default el de mongo es el 27017
 
 
 ## La Api Soporta:  

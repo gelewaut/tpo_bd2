@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const pool = require("./db");
+const config = require('./config.json')
 
 app.use(express.json()) // -> req.body
 
@@ -124,6 +125,6 @@ app.get("/products/:codigo_producto", async (req, res) => {
 })
 
 
-app.listen(3000, ()=> {
-    console.log("Server listening on port 3000")
+app.listen(config.api_port, ()=> {
+    console.log(`Server listening on port ${config.api_port}`)
 });

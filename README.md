@@ -14,6 +14,13 @@ dar de alta y modificacion productos
 Para saber como ejecutar la api consultar el siguiente 
 [README.md](api/README.md)
 
+## Mongo API
+
+Una api para poder dar de alta, baja y modificacion a clientes y 
+dar de alta y modificacion productos  
+Para saber como ejecutar la api consultar el siguiente 
+[README.md](api-mongo/README.md)
+
 ## MONGODB
 
 5 archivos csv correspondientes a los datos exportados del sql  
